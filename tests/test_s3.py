@@ -166,6 +166,8 @@ def test_listing_with_delimiter(monkeypatch):
         PaginationConfig={'MaxItems': 100}
     )
 
+    assert file_list is not None
+
 
 def test_listing_on_prefix_that_has_no_objects(monkeypatch):
     """
